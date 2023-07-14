@@ -39,10 +39,10 @@
 
 - 检查验证算法是否始终能接受正确签名
 
-    根据配对的性质，我们可以得出：$ e(g^0,σ) = e(g^0,αH(m)) = e(αg^0,H(m))= e(pk,H(m)) $
+    根据配对的性质，我们可以得出： $e(g^0,σ) = e(g^0,αH(m)) = e(αg^0,H(m))= e(pk,H(m))$
 
     因此，验证算法总是接受正确签名的签名。
 
 - 请检查验证算法是否总是接受正确的签名
 
-    BLS的安全性依赖于 $(G_0, G_1)$双线性群中的标准 **co-CDH 假设** 。 该假设表明对于所有有效的算法当满足 $\alpha, \beta \stackrel{R}{\leftarrow}Z_q$ 时 $\alpha$ 的数量 $CDHadv[\Alpha, (G_0, G_1)]\: := Pr[\Alpha(g_1^\alpha, g_0^\beta, g_0^\alpha)=g_0^{\alpha\beta}] $ 是不多的。
+    BLS的安全性依赖于 $(G_0, G_1)$双线性群中的标准 **co-CDH 假设** 。 该假设表明对于所有有效的算法当满足 $\alpha, \beta \stackrel{R}{\leftarrow}Z_q$ 时 $\alpha$ 的数量 $CDHadv[A, (G_0, G_1)]\: := Pr[A(g_1^\alpha, g_0^\beta, g_0^\alpha)=g_0^{\alpha\beta}]$ 是不多的。
